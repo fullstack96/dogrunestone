@@ -142,6 +142,11 @@ header .menu {
     text-transform: uppercase;
     font-size: 1.5em;
 }
+.info_dog{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
 .text_info{
     margin-top: 80px;
 }
@@ -154,6 +159,40 @@ header .menu {
    display: flex;
    justify-content: center;
 }
+/**/
+.conteiner_uno{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.tex_uno_c{
+
+    font-size: 0.9em;
+    color: #f07414;
+}
+.c_main{
+    margin: 0px 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.c_main_uno{
+    margin: 0px 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.c_uno{
+    width: 40%;
+
+}
+.c_dos{
+    width: 40%;
+}
+
+
 .uno{
     width: 20%;
     margin: 2px 4px;
@@ -248,8 +287,19 @@ footer {
     header ul{
         width: 60%;
     }
+
+    .info_dog{
+        padding: 0px 80px;
+    }
     .title_tokenomic{
         font-size: 2em;
+    }
+    .c_uno{
+        width: 30%;
+    
+    }
+    .c_dos{
+        width: 30%;
     }
     .uno{
         width: 12%;
@@ -274,6 +324,9 @@ footer {
 /*media querys 750px hasta */
 
 @media(min-width:750px) {
+    .info_dog{
+        padding: 0px 80px;
+    }
 
     .uno{
         width: 10%;
@@ -331,6 +384,10 @@ footer {
         display: none;
     }
 
+    .info_dog{
+        padding: 0px 130px;
+    }
+
     .text_info{
         color: #fff;
         padding: 0px 100px;
@@ -363,6 +420,9 @@ footer {
     .logo{
         margin-left: 50px;
     }
+    .info_dog{
+        padding: 0px 160px;
+    }
     .text_info{
         padding: 0px 200px;
         font-size: 1.3em;
@@ -375,7 +435,9 @@ footer {
     .logo{
         margin-left: 120px;
     }
-    
+    .info_dog{
+        padding: 0px 180px;
+    }
     .text_info{
         padding: 0px 400px;
         font-size: 1.5em;
