@@ -159,6 +159,9 @@ header .menu {
    display: flex;
    justify-content: center;
 }
+.contrato{
+    font-size: 0.6em;
+}
 /**/
 .conteiner_uno{
     display: flex;
@@ -236,6 +239,7 @@ footer {
 /*media querys 360px hasta */
 
 @media(min-width:360px) {
+    
 
     .uno{
         width: 15%;
@@ -260,6 +264,9 @@ footer {
 /*media querys 460px hasta */
 
 @media(min-width:460px) {
+    .contrato{
+        font-size: 0.8em;
+    }
     .uno{
         width: 14%;
         margin: 2px 4px;
@@ -294,6 +301,9 @@ footer {
     .title_tokenomic{
         font-size: 2em;
     }
+    .contrato{
+        font-size: 0.9em;
+    }
     .c_uno{
         width: 30%;
     
@@ -301,6 +311,7 @@ footer {
     .c_dos{
         width: 30%;
     }
+    
     .uno{
         width: 12%;
         margin: 2px 7px;
@@ -327,7 +338,9 @@ footer {
     .info_dog{
         padding: 0px 80px;
     }
-
+    .contrato{
+        font-size: 1em;
+    }
     .uno{
         width: 10%;
         margin: 2px 8px;
