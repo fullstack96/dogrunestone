@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(5,10,30,255);
+    /* fondo de color en css*/
+}
+
+.logo {
+    display: inline;
+    width: 200px;
+}
+
+#chk1 {
+    display: none;
+    /*con esto hacemos desaparecer al input q tiene como id="chk1"*/
+}
+
+i {
+    color: #f07414;
+    /*Con esto damos color a los iconos*/
+    cursor: pointer;
+    /*el cursor cambia a una mano, indicando que el usuario puede hacer clic en él para realizar una acción.*/
+}
+
+/*Vista Mobil 320px*/
+/*Inicio Codigo de Navbar*/
+header {
+    width: 100%;
+    /*Ancho del fondo de Navbar*/
+    height: 100px;
+    /*Altura del fondo de Navbar*/
+    position: fixed;
+    /*
+            La propiedad CSS position: fixed se utiliza para posicionar un elemento de forma fija en relación con la ventana del navegador, independientemente de la posición de desplazamiento del documento. Esto significa que el elemento permanecerá en la misma posición incluso si el usuario se desplaza hacia arriba o hacia abajo en la página.*/
+    display: flex;
+    margin-top: -140px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    /*Un valor de z-index de 99 indica que el elemento tiene una alta prioridad en la pila de capas y estará por encima de elementos con valores de z-index menores o predeterminados.*/
+    box-shadow: 0 0 10px #000;
+    /*Entonces, box-shadow: 0 0 10px #000; significa que la sombra no se desplazará ni horizontal ni verticalmente (0 0), tendrá un desenfoque de 10 píxeles (10px) y será de color negro (#000).*/
+    background: linear-gradient(to bottom right, #000000, hsla(23, 100%, 2%, 0));
+    /*Color del navbar*/
+}
+
+/*Fin Codigo de Navbar*/
+
+/*Inicio Codigo de Menu Navbar*/
+header ul {
+
+    /*Cuando estableces flex: 2; en un elemento hijo dentro de un contenedor flexible, significa que ese elemento tiene una capacidad de crecimiento que es el doble que la de otros elementos hijos con flex: 1; dentro del mismo contenedor. En otras palabras, cuando hay espacio adicional disponible dentro del contenedor flexible, este elemento hijo con flex: 2; crecerá el doble de rápido que otros elementos hijos con flex: 1;.*/
+    display: flex;
+    /*
+            La propiedad CSS display: flex; se utiliza para crear un contenedor flexible (flex container) que organiza a sus elementos hijos (flex items) en una disposición flexible o en filas y columnas.*/
+    justify-content: space-evenly;
+    position: fixed;
+    top: 100px;
+    right: -100%;
+    background: linear-gradient(to bottom right, #000000, hsla(23, 100%, 2%, 0));
+    height: calc(100vh - 100px);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.5s linear;
+}
+
+
+header ul li {
+    list-style: none;
+    /*La propiedad CSS list-style se utiliza para controlar la apariencia de las viñetas o numeración en elementos de lista (<ul> y <ol>). Cuando estableces list-style: none;, estás indicando que no deseas que se muestren viñetas o numeración para los elementos de lista.*/
+}
+
+header ul li a {
+    text-decoration: none;
+    /*La propiedad CSS text-decoration: none; se utiliza para quitar cualquier decoración de subrayado o tachado que se aplique al texto dentro de un elemento HTML.*/
+    color: #f07414;
+    /*Color a las letras*/
+    font-weight: 600;
+    /*La propiedad CSS font-weight se utiliza para establecer el grosor o la "pesadez" de la fuente de texto. El valor numérico 600 se refiere a un grosor específico de la fuente.*/
+    text-transform: uppercase;
+    /*
+            La propiedad CSS text-transform: uppercase; se utiliza para transformar el texto en mayúsculas. Cuando se aplica esta propiedad a un elemento HTML, todo el texto dentro de ese elemento se convertirá en letras mayúsculas.*/
+}
+
+header ul li a:hover {
+    /*Este selector CSS header ul li a:hover se utiliza para aplicar un estilo específico a los enlaces (<a>) dentro de las listas (<li>) que están dentro de una lista no ordenada (<ul>) dentro de un elemento <header> cuando el usuario pasa el cursor sobre ellos (es decir, cuando están en estado :hover).*/
+    border-bottom: 2px solid rgb(250, 248, 248);
+    /*El estilo que se aplica en este caso es border-bottom: 2px solid cadetblue;, lo que significa que cuando el usuario pasa el cursor sobre un enlace, se agregará un borde sólido de color cadetblue en la parte inferior del enlace con un grosor de 2px.*/
+}
+
+header .menu {
+    font-size: 2.5em;
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+
+#chk1:checked~ul {
+    right: 0;
+}
+
+/*Fin Codigo de Menu Navbar*/
+
+/*Inicio codigo de fondo de Dogrunestone*/
+.fondo_uno{
+    margin-top: 140px;
+}
+/*Fin de codigo de fondo de Dogrunestone*/
+
+/*title tokenomic*/
+.title_tokenomic {
+    margin-top: 80px;
+    
+    text-align: center;
+    color: #f07414;
+    text-shadow: 2px 4px 1px #010101;
+    /* Sombra */
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.text_info{
+    margin-top: 80px;
+}
+
+.all_img_uno{
+    margin-top: 80px;
+}
+.all_img{
+
+   display: flex;
+   justify-content: center;
+}
+.uno{
+    width: 20%;
+    margin: 2px 4px;
+}
+.dos{
+    width: 20%;
+    margin: 2px 4px;
+}
+
+.tres{
+    width: 20%;
+    margin: 2px 4px;
+}
+
+.cuatro{
+    width: 20%;
+    margin: 2px 4px;
+}
+
+
+
+/*Fin de codigo de tokenomic*/
+/*footer*/
+footer {
+   margin-top: 140px;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+}
+
+.contact_gmail {
+    color: #fff;
+    margin: 30px;
+    font-size: 100%;
+    text-transform: uppercase;
+    font-weight: 900;
+    /* Sombra */
+}
+
+
+/*media querys 360px hasta */
+
+@media(min-width:360px) {
+
+    .uno{
+        width: 15%;
+        margin: 2px 4px;
+    }
+    .dos{
+        width: 15%;
+        margin: 2px 4px;
+    }
+    
+    .tres{
+        width: 15%;
+        margin: 2px 4px;
+    }
+    
+    .cuatro{
+        width: 15%;
+        margin: 2px 4px;
+    }
+}
+
+/*media querys 460px hasta */
+
+@media(min-width:460px) {
+    .uno{
+        width: 14%;
+        margin: 2px 4px;
+    }
+    .dos{
+        width: 14%;
+        margin: 2px 4px;
+    }
+    
+    .tres{
+        width: 14%;
+        margin: 2px 4px;
+    }
+    
+    .cuatro{
+        width: 14%;
+        margin: 2px 4px;
+    }
+    
+}
+
+/*media querys 560px hasta */
+
+@media(min-width:560px) {
+    header ul{
+        width: 60%;
+    }
+    .title_tokenomic{
+        font-size: 2em;
+    }
+    .uno{
+        width: 12%;
+        margin: 2px 7px;
+    }
+    .dos{
+        width: 12%;
+        margin: 2px 7px;
+    }
+    
+    .tres{
+        width: 12%;
+        margin: 2px 7px;
+    }
+    
+    .cuatro{
+        width: 12%;
+        margin: 2px 7px;
+    }
+}
+
+/*media querys 750px hasta */
+
+@media(min-width:750px) {
+
+    .uno{
+        width: 10%;
+        margin: 2px 8px;
+    }
+    .dos{
+        width: 10%;
+        margin: 2px 8px;
+    }
+    
+    .tres{
+        width: 10%;
+        margin: 2px 8px;
+    }
+    
+    .cuatro{
+        width: 10%;
+        margin: 2px 8px;
+    }
+
+}
+
+/*media querys 900px hasta */
+
+@media(min-width:900px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 99;
+    }
+
+    header ul {
+        flex: 2;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+        top: 50px;
+        left: 60px;
+        height: 0px;
+    }
+
+    header ul li {
+        list-style: none;
+    }
+
+    header ul li a {
+        text-decoration: none;
+
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    .text_info{
+        color: #fff;
+        padding: 0px 100px;
+        font-size: 1.3em;
+    }
+    .uno{
+        width: 10%;
+        margin: 2px 10px;
+    }
+    .dos{
+        width: 10%;
+        margin: 2px 10px;
+    }
+    
+    .tres{
+        width: 10%;
+        margin: 2px 10px;
+    }
+    
+    .cuatro{
+        width: 10%;
+        margin: 2px 10px;
+    }
+    
+}
+
+/*media querys 1200px hasta */
+
+@media(min-width:1200px){
+    .logo{
+        margin-left: 50px;
+    }
+    .text_info{
+        padding: 0px 200px;
+        font-size: 1.3em;
+    }
+}
+
+/*media querys 1200px hasta */
+
+@media(min-width:1400px){
+    .logo{
+        margin-left: 120px;
+    }
+    
+    .text_info{
+        padding: 0px 400px;
+        font-size: 1.5em;
+    }
+}
